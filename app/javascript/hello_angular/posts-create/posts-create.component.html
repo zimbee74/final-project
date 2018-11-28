@@ -1,0 +1,7 @@
+<h2>Create Post</h2>
+<div>
+<p> Heading: <input [(ngModel)]="post.heading" placeholder="Heading"></p><br>
+<p> Content: <input [(ngModel)]="post.content" placeholder="Content"></p><br>
+<p> Image: <input [(ngModel)]="post.image" placeholder="Image"></p>
+</div>
+<button (click)="save()">Add Post</button>

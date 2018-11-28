@@ -1,0 +1,130 @@
+// Place all the styles related to the Pages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  background-image: image-url('positional-17.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  color: white;
+}
+
+h2 {
+  color: white;
+}
+
+p {
+  color: white;
+}
+
+a {
+  color: white;
+}
+
+nav {
+     width:100vw;
+     height: 7vh;
+     background-color: #4A90E2;
+     display: block;
+     position: fixed;
+     top: 0;
+     left: 0;
+
+}
+
+
+nav ul {
+list-style-type: none;
+   padding: 0;
+}
+
+nav ul span{
+
+padding: 0;
+     float: right;
+     overflow: hidden;
+}
+
+nav ul span li{
+  padding: 10px;
+  background-color: #4A90E2;
+  display: inline;
+  vertical-align: inherit;
+}
+
+nav ul span li a{
+  color: white;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  padding: 0px;
+  background-color: #4A90E2;
+
+  text-decoration: none;
+  display: inline-block;
+    padding: 10px;
+}
+
+nav ul span li a:hover {
+    background-color: #00397B;
+}
+
+.site-navigation {
+  float: left;
+
+}
+
+
+.postsheading {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.postscontent {
+    text-decoration: none;
+    color: white;
+}
+
+.posts-latest img {
+  max-height: 200px;
+}
+
+
+.login-box {
+background-color: #4A90E2;
+width: 25vw;
+height: 35vh;
+border-radius: 25px;
+display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25vh;
+}
+
+
+.login-contents {
+  transform: translate(33%, 33%);
+  font-family: sans-serif;
+  font-style: normal;
+   font-weight: bold;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
+
+.site-enter {
+  float: right;
+}
+
+.signup-items {
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  color: white;
+}

@@ -1,0 +1,12 @@
+<h2>{{ name }}</h2>
+<ul>
+  <li class="posts-latest" *ngFor="let user of users">
+    <a routerLink="/users/{{user.id}}">
+      <img src="{{user.image}}" alt="">
+      <br><br>
+      <strong class="usersheading">{{ user.name }} </strong>
+      <br>
+      <br>
+    </a>
+  </li>
+</ul>
