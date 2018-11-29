@@ -12,13 +12,14 @@ import {PostsEditComponent }  from '../posts-edit/posts-edit.component';
 
 import {UsersComponent }  from '../users/users.component';
 import {UsersShowComponent }  from '../users-show/users-show.component';
+import {UsersEditComponent }  from '../users-edit/users-edit.component';
 
 const routes: Routes = [
 
   { path: '', redirectTo: '/posts', pathMatch: 'full' },
   { path: 'posts', component: PostsComponent },
   { path: 'posts/new', component: PostsCreateComponent },
-  { path: 'posts/new', component: PostsEditComponent },
+  { path: 'posts/:id/edit', component: PostsEditComponent },
   { path: 'posts/:id', component: PostsShowComponent },
 
   { path: 'users', component: UsersComponent },

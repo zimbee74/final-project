@@ -3,9 +3,9 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-  background-image: image-url('positional-17.jpg');
   background-size: cover;
-  background-repeat: no-repeat;
+  background-image: url('positional-17.jpg');
+  // background-repeat: no-repeat;
 }
 
 h1 {
@@ -127,4 +127,17 @@ display: block;
   font-style: normal;
   font-weight: bold;
   color: white;
+}
+
+#heading {
+  width: 400px;
+}
+
+#content {
+  width: 400px;
+  height: 200px;
+}
+
+.postFullImage {
+  max-height: 400px;
 }

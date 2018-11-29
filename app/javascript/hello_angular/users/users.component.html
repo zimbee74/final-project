@@ -2,7 +2,10 @@
 <ul>
   <li class="posts-latest" *ngFor="let user of users">
     <a routerLink="/users/{{user.id}}">
-      <img src="{{user.image}}" alt="">
+      <!-- <img src="{{user.image}}" alt=""> -->
+
+      <cl-image public-id="{{user.image}}" class="thumbnail inline"></cl-image>
+      <br><br>
       <br><br>
       <strong class="usersheading">{{ user.name }} </strong>
       <br>

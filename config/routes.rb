@@ -14,10 +14,12 @@ Rails.application.routes.draw do
   post '/posts' => 'posts#create'
   post '/posts/:id' => 'posts#update'
 
+
   # Users
   resources :users, except: [:index, :show]
   get '/users' => 'users#index'
   get '/users/:id' => 'users#show'
+  post '/users/:id' => 'users#update'
 
   # get '/users/:id' => 'users#new'
   # post '/users/:id' => 'users#create'

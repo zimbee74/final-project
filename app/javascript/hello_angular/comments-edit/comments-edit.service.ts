@@ -11,10 +11,10 @@ export class PostsEditService {
   constructor(private http: HttpClient) { }
 
 
-  postsEditUrl = '/posts/'; // RAILS AJAX route which returns an array of the most recent Post rows
+  postsEditUrl = '/comments/'; // RAILS AJAX route which returns an array of the most recent Post rows
 
-  editPost(post) {
-    return this.http.post(this.postsEditUrl + post.id, post, httpOptions);
+  editPost(comment) {
+    return this.http.comment(this.commentsEditUrl + comment.id, comment, httpOptions);
   }
 
 }

@@ -15,11 +15,21 @@ import { PostsCreateComponent} from '../posts-create/posts-create.component';
 import { PostsCreateService} from '../posts-create/posts-create.service';
 import { PostsEditComponent} from '../posts-edit/posts-edit.component';
 import { PostsEditService} from '../posts-edit/posts-edit.service';
+import { UsersEditComponent} from '../users-edit/users-edit.component';
+import { UsersEditService} from '../users-edit/users-edit.service';
+
+import { CommentsComponent } from '../comments/comments.component';
+
+
+
 
 import { UsersComponent} from '../users/users.component';
 import { UsersService } from '../users/users.service';
 import { UsersShowComponent} from '../users-show/users-show.component';
 import { UsersShowService } from '../users-show/users-show.service';
+
+import { CloudinaryModule, CloudinaryConfiguration } from '@cloudinary/angular-5.x';
+import { Cloudinary } from 'cloudinary-core';
 
 
 
@@ -36,13 +46,15 @@ import { HttpClientModule } from '@angular/common/http';
     PostsCreateComponent,
     PostsEditComponent,
     UsersComponent,
-    UsersShowComponent
+    UsersShowComponent,
+    CommentsComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+    CloudinaryModule.forRoot({Cloudinary}, { cloud_name: 'dgjch4s7s' } as CloudinaryConfiguration),
   ],
   providers: [
     PostsService,

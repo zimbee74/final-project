@@ -1,7 +1,7 @@
 <h2>Edit Post</h2>
-<div>
-<p> Heading: <input [(ngModel)]="post.heading" placeholder="Heading"></p><br>
-<p> Content: <input [(ngModel)]="post.content" placeholder="Content"></p><br>
+<div class="editPost">
+<p> Heading: <input [(ngModel)]="post.heading" placeholder="Heading" id="heading"></p><br>
+<p> Content: <textarea [(ngModel)]="post.content" placeholder="Content" id="content"></textarea></p><br>
 <p> Image: <input [(ngModel)]="post.image" placeholder="Image"></p>
 </div>
-<button (click)="save()">Add Post</button>
+<button (click)="save()">Save Edited Post</button>

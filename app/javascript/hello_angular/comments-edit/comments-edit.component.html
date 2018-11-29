@@ -1,0 +1,7 @@
+<h2>Edit Post</h2>
+<div class="editComment">
+<p> Heading: <input [(ngModel)]="comment.heading" placeholder="Heading" id="heading"></p><br>
+<p> Content: <textarea [(ngModel)]="comment.content" placeholder="Content" id="content"></textarea></p><br>
+<p> Image: <input [(ngModel)]="comment.image" placeholder="Image"></p>
+</div>
+<button (click)="save()">Save Edited Comment</button>

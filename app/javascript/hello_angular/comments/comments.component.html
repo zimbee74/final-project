@@ -1,0 +1,14 @@
+<h2>COMMENTS component</h2>
+
+<ul>
+  <li class="comments-latest" *ngFor="let comment of comments">
+      <!-- <img src="{{post.image}}" alt=""> -->
+      <br><br>
+      <strong class="commentheading">{{ comment.user.name }} </strong> <br>
+       <p class="commentscontent">
+        {{ comment.content }}
+        <cl-image public-id="{{comment.user.image}}" class="userImage"></cl-image> </p>
+      <br>
+      <br>
+  </li>
+</ul>

@@ -1,1 +1,7 @@
-<h2>Post name: {{post.heading}} <br> <img class="posts-latest" src="{{post.image}}" alt=""><br> {{post.content}}</h2>
+<h2>{{post.heading}}</h2>
+<br>
+<cl-image public-id="{{post.image}}" class="postFullImage"></cl-image>
+<br><br>
+<p>{{post.content}}</p>
+<hr>
+<post-comments [comments]="post.comments"></post-comments>

@@ -1,0 +1,7 @@
+<h2>Edit Post</h2>
+<div class="editUser">
+<p> Heading: <input [(ngModel)]="user.name" placeholder="Heading" id="heading"></p><br>
+<p> Content: <textarea [(ngModel)]="user.email" placeholder="Content" id="content"></textarea></p><br>
+<p> Image: <input [(ngModel)]="user.password" placeholder="Image"></p>
+</div>
+<button (click)="save()">Save Edited User</button>

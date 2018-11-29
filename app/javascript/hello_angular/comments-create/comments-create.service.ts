@@ -7,14 +7,14 @@ const httpOptions = {
 };
 
 @Injectable()
-export class PostsEditService {
+export class CommentsCreateService {
   constructor(private http: HttpClient) { }
 
 
-  postsEditUrl = '/posts/'; // RAILS AJAX route which returns an array of the most recent Post rows
+  commentsCreateUrl = '/posts'; // RAILS AJAX route which returns an array of the most recent Post rows
 
-  editPost(post) {
-    return this.http.post(this.postsEditUrl + post.id, post, httpOptions);
+  createComment(comment) {
+    return this.http.comment(this.postsCreateUrl, comment, httpOptions);
   }
 
 }
